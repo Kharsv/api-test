@@ -28,7 +28,7 @@ foreach ($users as $user) {
 
 $query = "UPDATE `users` 
 SET `login` = ('$newlogin')
-WHERE `users`.`id` = 4;";
+WHERE `id` = ('$findbyid')";
 
 $result = mysqli_query($link, $query);
 
